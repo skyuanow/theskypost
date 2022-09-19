@@ -28,12 +28,53 @@
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
+    align-items: center;
+    justify-content: center;
 }
 
 #navbar__logo {
     background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
 }
 
 #logo {
-    width: 75px;
+    width: 7rem;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+.navbar__item {
+    height: 80px;
+}
+  
+.navbar__links {
+    color: #67c9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__above {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    background: #D7F5FF;
+    padding: 10px;
 }
